@@ -1,0 +1,15 @@
+{
+  "name": "carbon-thumbnail-generator",
+  "version": "1.0.0",
+  "description": "Generate Image Thumbnail For Each Second From a Video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "express": "^4.16.3"
+  }
+}
