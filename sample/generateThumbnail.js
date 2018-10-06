@@ -1,9 +1,12 @@
 const thumbnailGenerator = require('../src');
-const path = require('path');
 
 thumbnailGenerator.setFFMpegPath('../bin/ffmpeg.exe');
 thumbnailGenerator.setFFProbePath('../bin/ffprobe.exe');
 
-thumbnailGenerator.generateThumbnails('../../../../dist/sample.mp4', {
+thumbnailGenerator.generateThumbnails('sample.mp4', {
     outputDir: './tmp'
+}).then(() => {
+    console.log('Suceess');
+}).catch(error => {
+    console.log(error);
 });

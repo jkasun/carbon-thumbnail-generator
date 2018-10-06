@@ -1,6 +1,6 @@
 {
   "name": "carbon-thumbnail-generator",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Generate Image Thumbnail For Each Second From a Video",
   "main": "index.js",
   "scripts": {

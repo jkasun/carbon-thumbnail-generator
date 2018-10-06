@@ -1,4 +1,5 @@
 const { spwanProcess } = require('./execute');
+const { mkDirByPathSync } = require('./file');
 const path = require('path');
 
 module.exports = function () {
@@ -32,6 +33,7 @@ module.exports = function () {
             imageHeight = options.imageHeight || imageHeight;
 
             if (options.outputDir) {
+                mkDirByPathSync(options.outputDir);
                 outputFileName = path.join(options.outputDir, outputFileName)
             }
         }
